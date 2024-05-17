@@ -1,0 +1,157 @@
+REACT EXCERCISE
+
+1.  What is virtual DOM in React?
+    answer: 
+    sebuah struktur data yang merupakan representasi abstrak dari struktur DOM aktual. Ini mencakup semua elemen, atribut, dan relasi di dalam struktur DOM, tetapi ada di dalam memori dan tidak terlihat oleh pengguna. 
+
+2.  What Is JSX?
+    answer:
+    jsx adalah singkatan dari javascript XML,yang merupakan ekstensi sintak khusus dari react.
+    jsx dapat mengembalikan html dalam javascript sehingga memudahkan dalam membuat aplikasi
+
+3.  Explain the steps to create a react application and print Hello World ?
+    answer:
+    1.pastikan laptop terinstal node
+    2.buka gitbash lalu jalankan perintah "npm install create-react-app my-app"
+    3.masuk ke folder projek dengan perintah "cd my-app"
+    4.buka projek dengan text editor dengan perintah "code ."
+    5.buka file "src/App.js"
+    6.hapus semua kode lalu gantikan dengan 
+    7."./react/answer3.js"   
+    7.buka aplikasi dengan perintah "npm start"
+
+4.  How to Create Event in React ?
+    answer:
+    1.tentukan event apa yang diinginkan
+    2.answer : "./react/answer4.js"
+
+5.  Explain Props in React ?
+    answer: 
+    prop digunakan untuk mengirim data dari parent ke children,props bersifat read-only
+
+6.  What is higher-order component in React ?
+    answer: 
+    sebuah fungsi yang mengambil komponen sebagai input dan mengembalikan komponen baru
+
+7.  Explain the difference between functional and class component in React ?
+    answer : 
+    1. functional component:
+        - menggunakan fungsi javascript
+        - menggunakan hook
+        -stateless component
+    2. class component :
+        - menggunakan syntax class dari javascript
+        - menggunakan lifecycle method
+        - statefull component
+        
+8.  What are hooks in React ?
+    answer: 
+    fitur dalam react yang memungkinkan pengembang untuk menggunakan state dan fitur React lainnya dalam komponen fungsi, yang sebelumnya hanya tersedia dalam komponen kelas.
+    contoh dari hook : useState,useEffect, useContext
+
+9.  Explain the useState hook in React?
+    answer: 
+    useState adalah salah satu hook dalam react, usestate dipanggil dalam function component untuk menambahkan suatu state lokal. terdapat dua bagian dalam usestate yaitu nilai state saat ini dan fungsi untuk memperbarui state
+
+10. Explain the “useEffect” hook in react?
+    answer:
+    salah satu hook  dalam React yang memungkinkan Anda melakukan "efek samping" dalam komponen.useEffect biasanya digunakan untuk mengambil data dari API, atau melakukan operasi lain yang tidak mempengaruhi tampilan langsung komponen.
+
+11. What is prop drilling and its disadvantages?
+    answer :
+    props drilling adalah kondisi dimana proses mengirim props dari komponen parent ke children secara berlapis-lapis. proses ini terjadi saat kita memiliki beberapa komponent yang saling terkait dan perlu meneruskan props dari komponen tertentu ke komponen yang lebih dalam.proses kurang baik untuk dilakukan karena kode menjadi kompleks dan susah untuk di maintenance.
+
+12. Explain props and state in React with differences
+    answer:
+    props adalah cara untuk mengirim data dari komponent parent ke komponent children, props bersifat read only dalam komponent children sehingga children tidak bisa mengubah nilai props yang diterima,
+    state adalah objek yang digunakan oleh komponen react untuk menyimpan dan mengelola data internal yang dapat berubah,state bersifat privat artinya hanya komponen itu yang dapat mengakses dan mengubah niali state.
+
+13. What is the use of ref in React?
+    answer :
+    useRef adalah salah satu hook dalam react yang digunakan membuat referenci ke element DOM.
+
+14. What is this.setState function in React?
+    answer:
+    properti dalam kelas komponen untuk menyimpan dan mengelola data lokal
+
+15. What are benefits of using react-redux?
+    answer:
+    mempermudah dalam manajemen state dan menghindari props drilling. react-redux juga mempermudah maintenance aplikasi
+    
+
+REDUX EXCERCISE
+
+1.  What is Redux ?
+    answer: redux adalah library third party yang digunakan untuk mengelola state aplikasi javascript, redux biasanya digunakan dalam aplikasi berbasis react, vue dan angular
+
+2.  What are the problems that Redux solves ?
+    answer:
+    redux memecahkan beberapa masalah seperti: manajemen state yang kompleks,menghidari props drilling,manajemen state asynchronous,mempermudah debugging
+
+3.  What are the advantages of Redux in React ?
+    answer:
+    kelebihan redux di react adalah: redux menyediakan cara untuk mengelola state global dalam react,redux juga menyediakan operasi asynchronous dengan menggunakan middleware, perubahan data dalam redux hanya terjadi dalam action sehingga redux mudah dilacak
+
+4.  Explain the core principles of Redux ?
+    answer:
+    princip utama redux:
+    1.  redux memiliki satu store yang menyimpan seluruh state
+    2.  cara untuk mengubah state adalah dengan memicu action
+    3.  perubahan state dilakukan melalui reducer
+
+5.  What is the difference between Redux and Context API ?
+    answer:
+    perbedaan redux dan context api:
+    redux : 
+    1. library third party yang digunakan untuk manajemen state
+    2. cocok digunakan untuk aplikasi yang kompleks
+    3. menggunakan action dan reducer untuk mengubah state
+    context api:
+    1. bagian dari react yang digunakan untuk berbagi state antar komponen secara sederhana 
+    2. cocok digunakan untuk aplikasi sederhana
+    3. langsung menggunakan setState atau useContext hook
+
+6.  What are the key components of Redux architecture ?
+    answer:
+    komponen utama dalam redux adalah action, reducer dan store
+    
+7.  What do you understand about Redux Toolkit ?
+    answer:
+    redux Toolkit adalah library yang dimiliki oleh redux untuk membantu pengembangan aplikasi redux lebih mudah dan efisien. 
+
+8.  What is the significance of immutability in Redux ? 
+    answer:
+    konsep penting dalam Redux dan pengembangan aplikasi berbasis state management secara umum. Dalam konteks Redux, immutability mengacu pada fakta bahwa state (keadaan) di Redux tidak boleh diubah secara langsung. Sebaliknya, setiap perubahan state harus menghasilkan state baru.
+
+9.  What do you understand about Redux Toolkit ?
+    answer:
+    redux Toolkit adalah library yang dimiliki oleh redux untuk membantu pengembangan aplikasi redux lebih mudah dan efisien. 
+
+10. What are actions in Redux ?
+    answer:
+    action adalah sebuah function yang mengembalikan sebuah objek berisi type yang digunakan untuk menentukan bagaimana state akan dirubah
+
+11. What are reducers in Redux ?
+    answer:
+    reducer adalah sebuah function yang digunakan untuk mengolah state yang ada distore
+
+12. What are Store in Redux ?
+    answer:
+    store adalah tempat untuk menampung state
+
+13. What is the purpose of the dispatch function in React Redux ?
+    answer:
+    dispatch function digunakan untuk menjembatani, agar suatu action bisa sampai ke reducer
+
+14. Describe the role of middleware in Redux ?
+    answer:
+    middleware dalam redux digunakan untuk menangani tindakan yang bersifat asynchronous,seperti pemanggilan API
+
+15. What is the difference between synchronous and asynchronous middleware in Redux ? //////belum
+    answer:
+    synchronous :
+    1.  dieksekusi secara langsung tanpa memerlukan waktu tambahan
+    2.  tidak memerlukan middleware dalam eksekusinya
+    asynchronous:
+    1.  memerlukan waktu tambahan saat eksekusinya, seperti saat pemanggilan API  
+    2.  memerlukan middleware dalam eksekusinya
